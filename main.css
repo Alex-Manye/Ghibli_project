@@ -15,7 +15,9 @@ h1 {
 }
 
 input[type=email],
-input[type=password] {
+input[type=password],
+input[type=username],
+input[type=confirmpassword] {
     height: 50px;
     margin-bottom: 70px;
     background-color: beige;
@@ -30,7 +32,9 @@ button {
 }
 
 .email,
-.password {
+.password,
+.username,
+.confirmpassword {
     height: 150%;
     padding: 30% 30% 0% 30%;
     display: flex;
