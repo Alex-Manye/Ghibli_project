@@ -3,11 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ghibli Studio fan DB</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+    <!--Para hacer la web mobile-first y responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ghibli project</title>
+    <!-- para poner el fabicon
+    <link rel ="shortcut icon" type ="image/png" href="images/title-img.png">
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <!--  <link rel="stylesheet" href="css/burger-menu-icon.css"> -->
+
 </head>
 
 <body>
@@ -15,56 +22,79 @@
         <div class="logoname">
             <h1>STUDIO GHIBLI FAN DB</h1>
         </div>
-        <nav>
-            <div class="nav-container">
-                <div>
-                    <div class="burger-menu-icon" onclick="toggleBurgerMenu(event)">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+        <nav class="navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
-            <ul class="nav-menu hide-menu" id="nav-menu">
-                <li><a href="FAQs.html">FAQs</a></li>
-                <li><a href="News.html">News</a></li>
-                <li><a href="signup.html">Signup</a></li>
-            </ul>
         </nav>
     </header>
 
     <main>
-        <section class="login">
+        <section class="login bg-light">
             <h1>Welcome to the fantasy world of Ghibli Studio!</h1>
+            <div class="row justify-content-md-center">
+                <div class="col-sm-4">
+                    <form class="login-form bg-info" action="">
+                        <div class="email">
+                            <label><b>Email</b></label>
+                            <input type="email" id="email" placeholder="Email" />
 
-            <div class="form-container">
-                <form class="login-form" action="">
-                    <div class="email">
-                        <label>Email</label>
-                        <input type="email" id="email" placeholder="Email" />
-                        <!--     </div> -->
-                        <!-- 
+                            <!-- 
                     <div class="password"> -->
-                        <label class="w3-text-blue"><b>Password</b></label>
-                        <input type="password" id="password" placeholder="****" />
+                            <label><b>Password</b></label>
+                            <input type="password" id="password" placeholder="****" />
+                        </div>
+                        <button type="submit" class="button" id="login-button" onclick="login(event)">Login</button>
+                    </form>
+                    <div class="errors-container">
                     </div>
-                    <button type="submit" class="button" id="login-button" onclick="login(event)">Login</button>
-                </form>
-                <div class="errors-container">
                 </div>
+            
             </div>
         </section>
     </main>
     <script src="main.js"></script>
     <!-- <script src="scripts/login.js"></script> -->
-    <footer>
-        <ul>
-            <li>MORE INFO</li>
-            <li>FAQs </li>
-            <li>News </li>
-        </ul>
-    </footer>
+    <section id="footer">
+        <br>
+        <div class="row justify-content-md-center">
+            <h3>Follow us in:</h3>
+            <img src="../img/redessociales.jpg" width="10%" style="margin:10px" alt="Socialnetworks">
+        </div>
+
+    </section>
+
+    <!-- jQuery first, then Popper.js,then Bootstrap.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
