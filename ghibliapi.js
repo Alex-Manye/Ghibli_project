@@ -32,10 +32,10 @@ async function getFilms() {
         /*a la class li le agrego el atributo flex-item definido 
         en el css: class*/
         li.innerHTML = `
-            <img src = "${data[i].image}" width = '100%' >
-            <h5 class= "card-title">"Title:${data[i].title}</h5> 
-            <p class = "card-text" > ${data[i].director}</p>
-            <p class = "card-text"> ${data[i].release_date}</p> 
+            <img src = "${data[i].image}" width = '100%'>
+            <p class= "card-text">Title: ${data[i].title}</p> 
+            <p class = "card-text">Director: ${data[i].director}</p>
+            <p class = "card-text">Release date: ${data[i].release_date}</p> 
         </div>`
 
         parent.appendChild(li);

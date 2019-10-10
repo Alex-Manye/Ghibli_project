@@ -1,247 +1,369 @@
-/*Login*/
-* {
-    padding: 0;
-    margin: 0;
-}
+    /*background: url(../images/fb24a57d5d82b2fa23c3c3878091530d.jpg) no-repeat center top /cover;
+    
+*/
 
-.logoname {
-    color: blue;
-}
-
-h1 {
-    text-align: center;
-    color: blue;
-}
-
-.login-form {
-    flex-direction: column;
-    align-content: center;
-}
-
-input[type=email],
-input[type=password],
-input[type=username],
-input[type=confirmpassword] {
-    height: 50px;
-    margin-bottom: 70px;
-    background-color: beige;
-}
-
-button {
-    background-color: rgb(11, 134, 38);
-    width: 15em;
-    height: 40px;
-    margin: 50px;
-    border-radius: 15px;
-}
-
-.email,
-.password,
-.username,
-.confirmpassword {
-    height: 150%;
-    padding: 30% 30% 0% 30%;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.footer {
-    background-color: rgb(15, 156, 234);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-
-}
-
-.button {
-    justify-content: right;
-}
-
-/*Main*/
-
-.navbar {
-    align-content: flex-end;
-}
-
-/*lo del codepen  */
-html {
-    height: 100%;
-}
-
-body {
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-
-body::after {
-    content: '';
-    display: block;
-    height: 100px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-}
-
-/* --- MAIN PAGE --- */
-
-.ghibli-list {}
-
-/*per les columnes*/
-
-@import "compass/css3";
-
-.flex-container {
-
-    list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-
-.flex-item {
-    background: beige;
-    max-width: 450px;
-    height: auto;
-    margin-top: 10px;
-    line-height: 150px;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-}
-
-.card-text {
-    font-size: 15px;
-}
-
-/*para hacerlo responsive hago el @media*/
-@media(min-width:600px) {
-
-    .flex-item {
-        max-width: 250px;
+    /*Login*/
+    * {
+        padding: 0;
+        margin: 0;
 
     }
 
-}
+    main {
+        background-image: url(img/back2.jpg);
+        height: 100%;
+    }
 
-/* --- FAQS PAGE --- */
-/* section FAQ's*/
+    .logoname {
+        color: blue;
+    }
 
-/*PRINCIPIO ALEX*/
+    h1 {
+        text-align: center;
+        color: blue;
+        font-family: 'mansalva';
+    }
 
-h4 {
-    color: red;
+    .email {
+        align-content: center;
+    }
 
-}
+    .login-form {
+        flex-direction: column;
+        align-content: center;
+    }
 
-.clickmore {
-    font-size: 12px;
-    color: violet;
-}
+    input[type=email],
+    input[type=password],
+    input[type=username],
+    input[type=confirmpassword] {
+        height: 50px;
+        margin-bottom: 70px;
+        background-color: beige;
+    }
+
+    button,
+    .button {
+        height: 40px;
+        margin: 10px;
+        background-color: rgb(175, 175, 228);
+        color: white;
+        border: none;
+        box-shadow: 3px 3px 0px var(--red-color);
+        border-radius: 5px;
+    }
+
+    input {
+        margin: 10px;
+        height: 40px;
+        border: none;
+        border-bottom: solid 2px var(--red-color);
+        text-align: center;
+    }
+
+    input:focus {
+        border-bottom: solid 2px var(--text-color);
+        outline-color: #ff6541;
+    }
 
 
-/*FINAL AlEX*/
+    button:hover,
+    .button.hover {
+        background-color: #4e4e4e;
+    }
 
-.header-faqs {
-    background: url(../images/Quagsire2_original_original.jpg) no-repeat center top /cover;
-    height: 60vh;
-}
+    button:disabled,
+    .button:disabled {
+        background-color: grey;
+    }
 
-.header-faqs h1 {
-    font-size: 35px;
-}
+    /**/
+
+    .email,
+    .password,
+    .username,
+    .confirmpassword {
+        height: 150%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer {
+        background-color: rgb(15, 156, 234);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+
+    }
+
+    .button {
+        justify-content: right;
+    }
+
+    /*Main*/
+
+    .navbar {
+        align-content: flex-end;
+    }
+
+    /*lo del codepen  */
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    body::after {
+        content: '';
+        display: block;
+        height: 100px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+    }
+
+    /* --- MAIN PAGE --- */
 
 
-/*
+    /*per les columnes*/
+
+    @import "compass/css3";
+
+    .flex-container {
+
+        list-style: none;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .flex-item {
+        background: beige;
+        max-width: 450px;
+        height: auto;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    /*para hacerlo responsive hago el @media*/
+    @media(min-width:600px) {
+
+        .flex-item {
+            max-width: 250px;
+
+        }
+
+    }
+
+    /* --- FAQS PAGE --- */
+    /* section FAQ's*/
+
+    /*PRINCIPIO ALEX*/
+
+    h4 {
+        color: red;
+
+    }
+
+    .clickmore {
+        font-size: 12px;
+        color: violet;
+    }
+
+
+    /*FINAL AlEX*/
+
+
+    /*
 CSS para FAQ's aquí!
 */
 
-/* section FAQ's*/
+    /* section FAQ's*/
 
-.faqs {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-}
+    .faqs {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
 
-.faq-heading {
-    width: 100%;
-    padding: 15px;
-    margin-top: 20px;
-    background-color: var(--red-color);
-    color: yellow;
-    border: 3px solid #e2e2e2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .faq-heading {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+        background-color: var(--red-color);
+        color: yellow;
+        border: 3px solid #e2e2e2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.faq-heading>h4 {
-    width: 85%;
-    /*para que no corte a la flecha*/
-}
+    .faq-heading>h4 {
+        width: 85%;
+        /*para que no corte a la flecha*/
+    }
 
-.faq-heading>.faq-arrow {
-    width: 10px;
-    height: 10px;
-    box-sizing: border-box;
-    transform: rotate(45deg);
-    transition: all ease 0.6s;
-    border-width: 0 2px 2px 0;
-    border-color: blueviolet;
-    border-style: solid;
-}
+    .faq-heading>.faq-arrow {
+        width: 10px;
+        height: 10px;
+        box-sizing: border-box;
+        transform: rotate(45deg);
+        transition: all ease 0.6s;
+        border-width: 0 2px 2px 0;
+        border-color: blueviolet;
+        border-style: solid;
+    }
 
-/*crea la flecha y la anima, la transforma con 6 milisegundos
+    /*crea la flecha y la anima, la transforma con 6 milisegundos
 */
 
 
-.faqs>.faq>.faq-main {
-    border: 1px solid #e2e2e2;
-}
+    .faqs>.faq>.faq-main {
+        border: 1px solid #e2e2e2;
+    }
 
 
-/* for animate faqs dropdown */
+    /* for animate faqs dropdown */
 
 
-.faqs>.faq>.faq-main {
-    /*juntar con la propiedad de arriba */
-    padding: 0 20px;
-    height: 0;
-    opacity: 0;
-    transition: all ease 0.8s;
-    overflow: hidden;
-    /* con esta propiedad no molesta para clicar el resto de faqs */
-}
+    .faqs>.faq>.faq-main {
+        /*juntar con la propiedad de arriba */
+        padding: 0 20px;
+        height: 0;
+        opacity: 0;
+        transition: all ease 0.8s;
+        overflow: hidden;
+        /* con esta propiedad no molesta para clicar el resto de faqs */
+    }
 
-.faqs>.toggle-faq-on>.faq-main {
-    padding: 20px;
-    height: auto;
-    opacity: 1;
-    transition: all ease 0.8s;
-}
+    .faqs>.toggle-faq-on>.faq-main {
+        padding: 20px;
+        height: auto;
+        opacity: 1;
+        transition: all ease 0.8s;
+    }
 
-.faqs>.toggle-faq>.faq-main>.faq-text {
-    height: 0;
-}
+    .faqs>.toggle-faq>.faq-main>.faq-text {
+        height: 0;
+    }
 
-.faqs>.toggle-faq-on>.faq-main>.faq-text {
-    height: auto;
-}
+    .faqs>.toggle-faq-on>.faq-main>.faq-text {
+        height: auto;
+    }
 
-.faqs>.toggle-faq-on>.faq-heading>.faq-arrow {
-    transform: rotate(225deg);
-    transition: all ease 0.6s;
-}
+    .faqs>.toggle-faq-on>.faq-heading>.faq-arrow {
+        transform: rotate(225deg);
+        transition: all ease 0.6s;
+    }
+
+
+    /*
+/* --- RESET --- */
+
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        cursor: url('../images/gam1282.cur'), auto;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --text-color: #1A1A1A;
+        --red-color: #E3350D;
+        --red-color: #rgb(234, 232, 250);
+        --white-color: #FFF;
+    }
+
+    body {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    main {
+        padding: 30px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    a:hover {
+        color: var(--red-color);
+    }
+
+
+
+
+    /* SIGNUP PAGE & LOGIN PAGE */
+
+    .signup,
+    .login {
+        margin-top: 85px;
+        text-align: center;
+    }
+
+    .form-wrapper {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-wrapper>form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .errors-container {
+        width: 100%;
+        max-width: 800px;
+    }
+
+
+    .errors-container p {
+        background-color: var(--red-color);
+        padding: 20px;
+        margin: 10px 0;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #feb1b1;
+    }
+
+    .errors-container p.correct-message {
+        background-color: rgb(47, 164, 93);
+        box-shadow: 0 0 10px #dbf1c1;
+    }

@@ -58,5 +58,7 @@ Movie info
 Trello: https://trello.com/b/0cnPdGRb/studio-ghibli-app
 API url: https://ghibliapi.herokuapp.com/#
 Studio Ghibli website: http://www.ghibli.jp/
-Github url: 
+Github url:
 Slides url: https://docs.google.com/presentation/d/1FtfVuPdFGvPHBvQHGPU_XKfZUDxCdnKKTKZlkIYmK7k/edit?usp=sharing
+
+Hola
