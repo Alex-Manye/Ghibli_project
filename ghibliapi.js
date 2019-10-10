@@ -1,30 +1,57 @@
 'use strict';
 
-async function getUsers() {
+/*2 posibilidades: a) modifico el objeto agregando la imagen 
+como propiedad o una vez ya tengo el objeto le agrego con un loop o forEach foto a cada objeto  . Escojo la primera opción   */
+
+function matchFilmImage(data, photos) {
+    data.forEach(movie => {
+        //buscar en photos la id de movie
+        //meter en movie la url de photo
+        const movieImage = photos.find(photo => {
+            if (photo.id === movie.id) {
+                return photo;
+            }
+        })
+        movie.image = movieImage.url;
+    })
+}
+
+async function getFilms() {
     let response = await fetch(`https://ghibliapi.herokuapp.com/films`);
     let data = await response.json();
-    //let div = document.querySelector("#card-deck");
+    matchFilmImage(data, photos);
+    //llamo a la función que me ha agregado la foto al objeto
+    let parent = document.querySelector(".flex-container");
+    //He de seleccionar al padre para hacer el appendChild
+    console.log(data);
 
     for (let i = 0; i < data.length; i++) {
-        let article = document.createElement('article');
-        article.setAttribute("class", "card");
-        //¿por qué le damos 2 atributos?
-        article.innerHTML = `<img src= "./img/Ghiblifoto1.jpeg"
-        class = "card-image-top" alt = "${data[i].title}";`
-        //¿2 innerHTML?
-        article.innerHTML = `<div class = "card-body">;
-            <h5 class="card-title">${data[i].title}</h5> 
+        let li = document.createElement('li');
+        li.setAttribute("metadata", "photo");
+        li.setAttribute("class", "flex-item");
+        /*a la class li le agrego el atributo flex-item definido 
+        en el css: class*/
+        li.innerHTML = `
+            <img src = "${data[i].image}" width = '100%' >
+            <h5 class= "card-title">"Title:${data[i].title}</h5> 
             <p class = "card-text" > ${data[i].director}</p>
             <p class = "card-text"> ${data[i].release_date}</p> 
         </div>`
 
-        section.appendChild(article); /* esto es lo que está mal*/
-
-        console.log(article);
+        parent.appendChild(li);
+        console.log(li);
     }
     console.log(data);
 }
-getUsers();
+getFilms();
+
+//var p = document.createElement("p");
+//document.body.appendChild(p);
+
+
+//https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49
+/*preguntar*/
+
 
 /*
 const connectToApi = () => {

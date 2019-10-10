@@ -1,4 +1,8 @@
 /*Login*/
+* {
+    padding: 0;
+    margin: 0;
+}
 
 .logoname {
     color: blue;
@@ -84,6 +88,52 @@ footer {
     bottom: 0;
     width: 100%;
     height: 100px;
+}
+
+/* --- MAIN PAGE --- */
+
+.ghibli-list {}
+
+/*per les columnes*/
+
+@import "compass/css3";
+
+.flex-container {
+
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    background: beige;
+    max-width: 450px;
+    height: auto;
+    margin-top: 10px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+/*para hacerlo responsive hago el @media*/
+@media(min-width:600px) {
+
+    .flex-item {
+        max-width: 250px;
+
+    }
+
 }
 
 /* --- FAQS PAGE --- */
