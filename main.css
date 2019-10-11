@@ -21,6 +21,11 @@
 
     h1 {
         text-align: center;
+        color: blue;
+        font-family: 'mansalva';
+    }
+
+    h2 {
         color: white;
         font-family: 'mansalva';
     }
@@ -29,7 +34,8 @@
     .login-form {
         flex-direction: column;
         align-content: center;
-        width: 25%;
+        width: 40%;
+        min-width: 200px;
     }
 
     input[type=email],
@@ -46,12 +52,13 @@
     .button {
         height: 40px;
         margin: 10px;
-        background-color: rgb(175, 175, 228);
+        background-color: #fff;
         color: white;
-        border: blue;
+        border: white;
         box-shadow: 3px 3px 0px var(--red-color);
         border-radius: 5px;
     }
+
 
     input {
         margin: 10px;
@@ -67,10 +74,7 @@
     }
 
 
-    button:hover,
-    .button.hover {
-        background-color: #3a3939;
-    }
+
 
     button:disabled,
     .button:disabled {
@@ -92,10 +96,9 @@
     /*mirar lo del responsive*/
     footer {
         background-color: #007bff;
-        position: absolute;
         bottom: 0;
         width: 100%;
-        height: 100px;
+        height: 75px;
         color: white;
         font-size: 5px;
         /*no me cambia el tamaño de la letra en el footer*/
@@ -124,19 +127,7 @@
         position: relative;
     }
 
-    body::after {
-        content: '';
-        display: block;
-        height: 100px;
-    }
 
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100px;
-        /*para que el footer no se coma el contenido*/
-    }
 
     /* --- MAIN PAGE --- */
 
@@ -171,8 +162,18 @@
         font-size: 15px;
     }
 
+    @media(max-width:500px) {
+        h3 {
+            font-size: 5px;
+            justify-content: center;
+
+        }
+    }
+
     /*para hacerlo responsive hago el @media*/
     @media(min-width:600px) {
+
+
 
         .flex-item {
             max-width: 250px;
