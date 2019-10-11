@@ -30,13 +30,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html"><span style="color:white">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faqs.html">FAQs</a>
+                        <a class="nav-link" href="faqs.html"><span style="color:white">FAQs</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="login.html"><span style="color:white">Login</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="signup.html"><span style="color:blue"><b>Signup</b></span><span
@@ -55,24 +55,23 @@
     <main>
         <section class="login">
             <h1>Sign up</h1>
-            <div class="row justify-content-md-center">
-                <div class="col-sm-4">
-                    <form class="login-form bg-info" action="">
-                        <div class="email">
-                            <label><b>Username</b></label>
-                            <input type="username" id="username" placeholder="username" />
-                            <label><b>Email</b></label>
-                            <input type="email" id="email" placeholder="Email" />
-                            <label><b>Password</b></label>
-                            <input type="password" id="password" placeholder="******" />
-                            <label><b>Confirm password</b></label>
-                            <input type="passwordRepeat" id="passwordRepeat" placeholder="******" />
-                            <button type="submit" class="button" id="signup-button" disabled
-                                onclick="signup.saveData(event)">Signup</button>
-                        </div>
-                    </form>
-                    <div class="errors-container">
+
+            <div class="cto">
+                <form class="login-form bg-info" action="">
+                    <div class="email">
+                        <label><b>Username</b></label>
+                        <input type="username" id="username" placeholder="username" />
+                        <label><b>Email</b></label>
+                        <input type="email" id="email" placeholder="Email" />
+                        <label><b>Password</b></label>
+                        <input type="password" id="password" placeholder="******" />
+                        <label><b>Confirm password</b></label>
+                        <input type="passwordRepeat" id="passwordRepeat" placeholder="******" />
+                        <button type="submit" class="button" id="signup-button" disabled
+                            onclick="signup.saveData(event)">Signup</button>
                     </div>
+                </form>
+                <div class="errors-container">
                 </div>
 
             </div>

@@ -2,16 +2,16 @@
 /**/
 class Validator {
     constructor() {
-        this.invalidEmailError = 'Introduce a valid email';
+        this.invalidEmailError = 'Type a valid email';
         this.repeatEmailError = 'Email in use';
-        this.passwordError = 'Introduce a 6 characters password';
+        this.passwordError = 'Type a 6 characters password';
         this.repeatPassError = 'Password is not the same';
 
         this.errors = {
             invalidEmailError: this.invalidEmailError,
             passwordError: this.passwordError,
             repeatPassError: this.repeatPassError
-        
+
         }
     }
 

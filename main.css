@@ -10,7 +10,7 @@
     }
 
     main {
-        background-image: url(img/back2.jpg);
+        background-image: url(img/back3.jpg);
         height: 100%;
     }
 
@@ -95,7 +95,6 @@
         bottom: 0;
         width: 100%;
         height: 100px;
-
     }
 
     .button {
@@ -187,12 +186,12 @@
     }
 
     .clickmore {
-        font-size: 12px;
-        color: violet;
+        font-size: 14px;
+        color: rgb(243, 18, 243);
     }
 
 
-    /*FINAL AlEX*/
+    /*Final columnes*/
 
 
     /*
@@ -211,9 +210,9 @@ CSS para FAQ's aquí!
         width: 100%;
         padding: 15px;
         margin-top: 20px;
-        background-color: var(--red-color);
+        background-color: beige;
         color: yellow;
-        border: 3px solid #e2e2e2;
+        border: 4px solid #e2e2e2;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -221,6 +220,9 @@ CSS para FAQ's aquí!
 
     .faq-heading>h4 {
         width: 85%;
+        color: rgb(6, 54, 175);
+        font-weight: bold;
+        font-style: oblique;
         /*para que no corte a la flecha*/
     }
 
@@ -231,13 +233,15 @@ CSS para FAQ's aquí!
         transform: rotate(45deg);
         transition: all ease 0.6s;
         border-width: 0 2px 2px 0;
-        border-color: blueviolet;
+        border-color: rgb(126, 7, 236);
         border-style: solid;
     }
 
     /*crea la flecha y la anima, la transforma con 6 milisegundos
 */
-
+    .faq-text {
+        color: white;
+    }
 
     .faqs>.faq>.faq-main {
         border: 1px solid #e2e2e2;
@@ -266,6 +270,7 @@ CSS para FAQ's aquí!
 
     .faqs>.toggle-faq>.faq-main>.faq-text {
         height: 0;
+
     }
 
     .faqs>.toggle-faq-on>.faq-main>.faq-text {
@@ -333,7 +338,7 @@ CSS para FAQ's aquí!
         text-align: center;
     }
 
-    .form-wrapper {
+    .cto {
         padding: 20px;
         display: flex;
         justify-content: center;
@@ -355,11 +360,11 @@ CSS para FAQ's aquí!
 
 
     .errors-container p {
-        background-color: var(--red-color);
-        padding: 20px;
+        background-color: orange;
+        padding: 10px;
         margin: 10px 0;
-        color: white;
-        border-radius: 5px;
+        color: red;
+        border-radius: 15px;
         box-shadow: 0 0 10px #feb1b1;
     }
 
