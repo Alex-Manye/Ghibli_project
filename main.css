@@ -11,7 +11,8 @@
 
     main {
         background-image: url(img/back3.jpg);
-        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .logoname {
@@ -20,17 +21,15 @@
 
     h1 {
         text-align: center;
-        color: blue;
+        color: white;
         font-family: 'mansalva';
     }
 
-    .email {
-        align-content: center;
-    }
 
     .login-form {
         flex-direction: column;
         align-content: center;
+        width: 25%;
     }
 
     input[type=email],
@@ -38,17 +37,18 @@
     input[type=username],
     input[type=confirmpassword] {
         height: 50px;
-        margin-bottom: 70px;
+        margin-bottom: 35px;
         background-color: beige;
     }
 
+    /*los botones del array */
     button,
     .button {
         height: 40px;
         margin: 10px;
         background-color: rgb(175, 175, 228);
         color: white;
-        border: none;
+        border: blue;
         box-shadow: 3px 3px 0px var(--red-color);
         border-radius: 5px;
     }
@@ -69,7 +69,7 @@
 
     button:hover,
     .button.hover {
-        background-color: #4e4e4e;
+        background-color: #3a3939;
     }
 
     button:disabled,
@@ -89,27 +89,32 @@
 
     }
 
-    .footer {
-        background-color: rgb(15, 156, 234);
+    /*mirar lo del responsive*/
+    footer {
+        background-color: #007bff;
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 100px;
+        color: white;
+        font-size: 5px;
+        /*no me cambia el tamaño de la letra en el footer*/
+
     }
 
-    .button {
-        justify-content: right;
-    }
+
 
     /*Main*/
 
     .navbar {
         align-content: flex-end;
+        padding-left: 20px;
     }
 
     /*lo del codepen  */
     html {
         height: 100%;
+        /*para que no desaparezca el contenido  */
     }
 
     body {
@@ -130,6 +135,7 @@
         bottom: 0;
         width: 100%;
         height: 100px;
+        /*para que el footer no se coma el contenido*/
     }
 
     /* --- MAIN PAGE --- */
@@ -180,10 +186,6 @@
 
     /*PRINCIPIO ALEX*/
 
-    h4 {
-        color: red;
-
-    }
 
     .clickmore {
         font-size: 14px;
@@ -212,10 +214,11 @@ CSS para FAQ's aquí!
         margin-top: 20px;
         background-color: beige;
         color: yellow;
-        border: 4px solid #e2e2e2;
+        border: 4px solid #007bff;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-radius: 15px;
     }
 
     .faq-heading>h4 {
@@ -291,15 +294,7 @@ CSS para FAQ's aquí!
     *::before {
         margin: 0;
         padding: 0;
-        cursor: url('../images/gam1282.cur'), auto;
         box-sizing: border-box;
-    }
-
-    :root {
-        --text-color: #1A1A1A;
-        --red-color: #E3350D;
-        --red-color: #rgb(234, 232, 250);
-        --white-color: #FFF;
     }
 
     body {
@@ -311,6 +306,7 @@ CSS para FAQ's aquí!
 
     main {
         padding: 30px;
+        /*Si lo quito sale una barra blanca. solo en login y signup*/
     }
 
     .container {
@@ -318,16 +314,12 @@ CSS para FAQ's aquí!
         justify-content: center;
     }
 
-    a {
-        text-decoration: none;
-        color: var(--text-color);
-    }
+
 
     a:hover {
         color: var(--red-color);
+        /*investigar*/
     }
-
-
 
 
     /* SIGNUP PAGE & LOGIN PAGE */
