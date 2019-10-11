@@ -40,8 +40,7 @@
 
     input[type=email],
     input[type=password],
-    input[type=username],
-    input[type=confirmpassword] {
+    input[type=text] {
         height: 50px;
         margin-bottom: 35px;
         background-color: beige;
@@ -52,7 +51,7 @@
     .button {
         height: 40px;
         margin: 10px;
-        background-color: #fff;
+        background-color: blue;
         color: white;
         border: white;
         box-shadow: 3px 3px 0px var(--red-color);
