@@ -1,5 +1,5 @@
 'use strict';
-/**/ 
+ 
 class Signup {
     constructor() {
         this.nameInput = document.querySelector('#username');
@@ -41,7 +41,6 @@ class Signup {
     }
 
     handleInputsValues = () => {
-        //comprobar los datos de inputs y validarlos
         this.emailInput.addEventListener('input', event => {
             const errors = validator.validateValidEmail(event.target.value)
             if (!('invalidEmailError' in errors)) {
@@ -64,7 +63,6 @@ class Signup {
     }
     handleErrorMessages = () => {
         this.errorsWrapper.innerHTML = '';
-        //mostrar mensajes de error en HTML si los hay
         const errors = validator.checkErrors()
         for (const prop in errors) {
             const error = document.createElement('p');
@@ -74,9 +72,8 @@ class Signup {
     }
 
     handleIsValid = () => {
-        //activar o desactivar botón del form en función de si hay o no errores
         const errors = validator.checkErrors();
-        if (Object.keys(errors).length === 0) { //no hay errores
+        if (Object.keys(errors).length === 0) { 
             this.buttonInput.removeAttribute("disabled");
         } else {
             this.buttonInput.setAttribute('disabled', '');

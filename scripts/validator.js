@@ -1,5 +1,5 @@
 'use strict';
-/**/
+
 class Validator {
     constructor() {
         this.invalidEmailError = 'Type a valid email';
@@ -25,7 +25,7 @@ class Validator {
     }
 
     validateUniqueEmail = (newEmail) => {
-        //recoger datos de localStorage
+
         const userDB = JSON.parse(localStorage.getItem('users'));
         console.log(userDB)
 
@@ -33,7 +33,7 @@ class Validator {
             delete this.errors.repeatEmailError;
             return this.errors;
         }
-
+        
         let mailUnique = true;
         userDB.forEach(user => {
             if (user.email === newEmail) {
