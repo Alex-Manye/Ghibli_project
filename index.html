@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--Para hacer la web mobile-first y responsive-->
+    <!--web mobile-first & responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Anime fan DB</title>
     <!-- para poner el fabicon
@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <!-- for social networks  -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
+
 
 </head>
 
@@ -21,7 +25,7 @@
     <div class="logoname" style="text-align:center">
         <h1>Anime fan DB</h1>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,16 +58,35 @@
 
     <section class="flex-container">
     </section>
-    <section class="ghibli-list">
+    <section class="ghibli-list pt-3">
     </section>
 
-    <footer>
-        <br>
-        <div class="row justify-content-md-center">
-            <h3>Follow us in:</h3>
-            <img src="./img/redessociales.jpg" width="10%" style="margin:10px" alt="Socialnetworks">
-        </div>
+    <footer class="container-fluid">
+        <div class="row pt-4 pl-5 pr-4">
+        <ul class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <li><b>GhiblifanDB</b></li>
+             <li> About us </li>
+             <li> Contact</li>
+        </ul>  
+        <ul  class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <li><b>eCommerce</b></li>
+             <li> Buy online (Soon) </li> 
+     
+         </ul >
+         <address class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+             <li><b>Contact details</b></li>
+             <li> 179 Shaftesbury Ave, West End, London WC2H 8JR, UK</li>
+             <li> Contact number:+44 1522 8802492</li>
+             <li> Email: info@studioghiblifan.com</li>
+         </address>
+         <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 justify-content-around">
+             <div class="d-flex justify-content-end">
+             <a href="#" class="btn azm-social azm-size-52 azm-circle azm-instagram"><i class="fa fa-instagram"></i></a>
+             <a href="#" class="btn azm-social azm-size-52 azm-circle azm-facebook"><i class="fa fa-facebook"></i></a>
+             <a href="#" class="btn azm-social azm-size-52 azm-circle azm-twitter"><i class="fa fa-twitter"></i></a>
+         </div> 
 
+        </div>
     </footer>
     <!-- jQuery first, then Popper.js,then Bootstrap.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -80,8 +103,6 @@
     <script src="./scripts/validator.js"></script>
     <script src="./scripts/photosData.js"></script>
     <script src="./scripts/ghibliapi.js"></script>
-
-
 
 
 </body>
